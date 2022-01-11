@@ -11,6 +11,16 @@ const API = "https://platzi-avo.vercel.app/api/avo";
 
 const appNode = document.querySelector("#app");
 
+// EVENT DELEGATION
+// quiero solo el h2
+appNode.addEventListener("click", (event) => {
+    // cuando obtenemos el target podemos saber cuál elemento hijo del padre fue clicado, por tanto, con una simple condicional puede ver si el elemento clicado es el que yo quiero.
+    if (event.target.nodeName === "H2") window.alert("hello");
+    
+});
+
+
+
 const formatPrice = (price) => {
     const newPrice = new window.Intl.NumberFormat("en-EN", {
         style: "currency",
