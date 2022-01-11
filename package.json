@@ -1,4 +1,5 @@
 {
+  "homepage": "https://EduardoLizarazu.github.io/avocado-shop-DOM",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
